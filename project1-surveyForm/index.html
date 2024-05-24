@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+   </head> 
+   <body>
+    <h1 id="title">Application Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the application</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="Enter your name" /></label>
+            <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="Enter your Email" /></label>
+            <label id="number-label" for="number">Age: <input id="number" type="number" min="12" max="120" placeholder="Age"/></label>
+            <label for="dropdown">What is your favorite feature of our application?</label>
+            <select id="dropdown" name="feature">
+                <option value="">(select an option)</option>
+                <option value="1">Free to use</option>
+                <option value="2">Daily Recipe Recommendations</option>
+                <option value="3">Health Report</option>
+            </select>   
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label for="recommend-1"></label><input id="recommend-1" type="radio" name="recommend" value="Definitely">Definitely</label>
+            <label for="recommend-2"></label><input id="recommend-2" type="radio" name="recommend" value="Maybe">Maybe</label>
+            <label for="recommend-3"></label><input id="recommend-3" type="radio" name="recommend" value="NotSure">Not Sure</label>
+        </fieldset>
+        <fieldset>
+            <legend>What would you like to see improved? (Check all that apply)</legend>
+            <label for="improve-1"></label><input id="improve-1" value="improve-1" type="checkbox" />UI Design</label>
+            <label for="improve-2"></label><input id="improve-2" value="improve-2" type="checkbox" />More Functions</label>
+            <label for="improve-3"></label><input id="improve-3" value="improve-3" type="checkbox" />More Recipes</label>
+            <label for="improve-4"></label><input id="improve-4" value="improve-4" type="checkbox" />More specific instructions</label>
+        </fieldset>
+        <fieldset>
+            <label for="comment">Any comments or suggestions?
+                <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+   </body>
+</html>
