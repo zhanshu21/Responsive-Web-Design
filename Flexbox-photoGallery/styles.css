@@ -27,8 +27,9 @@
     /* flex-wrap: The flex-wrap property specifies whether the flex items should wrap or not.; */
     /* wrap nowrap wrap-reverse */
     flex-wrap: wrap;
-    /* The justify-content property is used to align the flex items */
+    /* The justify-content property is used to align horizontal flex items */
     justify-content: center;
+    /* align-items: vertical; */
     /* Set both the justify-content and align-items properties to center, 
     and the flex item will be perfectly centered */
     align-items: center;
